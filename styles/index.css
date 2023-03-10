@@ -1,0 +1,232 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+body a.a-link {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header nav ul a {
+  display: flex;
+  align-items: center;
+}
+header nav#header-menu ul {
+  justify-content: start;
+}
+header nav#header-menu ul .header-selected a {
+  position: relative;
+}
+header nav#header-menu ul .header-selected a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2em;
+  background-color: white;
+  bottom: -0.2em;
+}
+header nav#header-sns ul {
+  justify-content: end;
+}
+header a {
+  margin: 0 1em;
+}
+header #header-menu,
+header #header-sns {
+  flex: 1 1 0;
+  margin: 0 2em;
+}
+header #header-home img {
+  height: 3em;
+}
+header #header-sns img {
+  height: 1em;
+}
+
+main h2 {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+}
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#index-photo img {
+  width: 100%;
+}
+
+section#index-news {
+  color: white;
+  background-color: black;
+}
+section#index-news #index-news-content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+}
+section#index-news #index-news-content #index-news-frame {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+}
+section#index-news #index-news-content #index-news-frame img {
+  width: 100%;
+}
+section#index-news #index-news-content p {
+  margin: 0 auto;
+}
+
+section#index-sns {
+  background-color: black;
+  color: white;
+}
+section#index-sns ul {
+  display: flex;
+  list-style: none;
+}
+section#index-sns ul li {
+  margin: 0 5em;
+}
+section#index-sns ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#index-sns ul li a img {
+  height: 10em;
+}
+section#index-sns ul li a p {
+  text-align: center;
+}
+
+section#index-contact {
+  color: white;
+  background-color: rgb(43, 43, 43);
+}
+section#index-contact form dl {
+  display: grid;
+  min-width: 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4em 6em 3em 3em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+section#index-contact form dl dd {
+  margin: 0;
+  display: block;
+}
+section#index-contact form dl dd input {
+  width: 100%;
+  height: 1.5em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0.1em;
+}
+section#index-contact form dl #index-contact-name {
+  grid-column: 1;
+  grid-row: 1;
+}
+section#index-contact form dl #index-contact-email {
+  grid-column: 2;
+  grid-row: 1;
+}
+section#index-contact form dl #index-contact-tel {
+  grid-column: 3;
+  grid-row: 1;
+}
+section#index-contact form dl #index-contact-content {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+section#index-contact form dl #index-contact-content textarea {
+  width: 100%;
+  height: 4em;
+  resize: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0.1em;
+}
+section#index-contact form dl #index-contact-privacy {
+  grid-column: 1/4;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+}
+section#index-contact form dl #index-contact-privacy p {
+  margin: 0;
+}
+section#index-contact form dl #index-contact-submit {
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: center;
+  align-self: first baseline;
+}
+section#index-contact form dl #index-contact-submit button {
+  width: 8em;
+  border-radius: 0.1em;
+  border: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 150px;
+}
+footer h2 {
+  margin: 1em 0;
+}
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+footer nav ul a {
+  display: flex;
+  align-items: center;
+}
+footer nav ul .footer-selected a {
+  position: relative;
+}
+footer nav ul .footer-selected a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2em;
+  background-color: white;
+  bottom: -0.2em;
+}
+footer a {
+  margin: 0 1em;
+}/*# sourceMappingURL=index.css.map */

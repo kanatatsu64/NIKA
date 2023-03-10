@@ -1,0 +1,269 @@
+@use "colors";
+
+body {
+    margin: 0;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &.a-link {
+            text-decoration: underline;
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: map-get(colors.$theme, "bg");
+    color: map-get(colors.$theme, "fg");
+
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+        }
+        &#header-menu ul {
+            justify-content: start;
+
+            .header-selected a {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 0.2em;
+                    background-color: map-get(colors.$theme, "fg");
+                    bottom: -0.2em;
+                }
+            }
+        }
+        &#header-sns ul {
+            justify-content: end;
+        }
+    }
+    a {
+        margin: 0 1em;
+    }
+
+    #header-menu,
+    #header-sns {
+        flex: 1 1 0;
+        margin: 0 2em;
+    }
+    #header-home {
+        img {
+            height: 3em;
+        }
+    }
+    #header-sns {
+        img {
+            height: 1em;
+        }
+    }
+}
+
+main {
+    h2 {
+        margin: 0;
+        margin-top: 1em;
+        font-size: 3em;
+        letter-spacing: 0.05em;
+    }
+
+    >section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+section#index-photo {
+    img {
+        width: 100%;
+    }
+}
+
+section#index-news {
+    color: map-get(colors.$theme, "fg");
+    background-color: map-get(colors.$theme, "bg");
+    
+    #index-news-content {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+
+        #index-news-frame {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            height: 400px;
+
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            margin: 0 auto;
+        }
+    }
+}
+
+section#index-sns {
+    background-color: map-get(colors.$theme, "bg");
+    color: map-get(colors.$theme, "fg");
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 0 5em;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    height: 10em;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+section#index-contact {
+    color: map-get(colors.$light, "fg");
+    background-color: map-get(colors.$light, "bg");
+
+    form dl {
+        display: grid;
+        min-width: 500px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4em 6em 3em 3em;
+        column-gap: 1em;
+
+        dd {
+            margin: 0;
+            display: block;
+
+            input {
+                width: 100%;
+                height: 1.5em;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                border-radius: 0.1em;
+            }
+        }
+        #index-contact-name {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #index-contact-email {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        #index-contact-tel {
+            grid-column: 3;
+            grid-row: 1;
+        }
+        #index-contact-content {
+            grid-column: 1 / 4;
+            grid-row: 2;
+
+            textarea {
+                width: 100%;
+                height: 4em;
+                resize: none;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                border-radius: 0.1em;
+            }
+        }
+        #index-contact-privacy {
+            grid-column: 1 / 4;
+            grid-row: 3;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0;
+            }
+        }
+        #index-contact-submit {
+            grid-column: 2;
+            grid-row: 4;
+
+            justify-self: center;
+            align-self: first baseline;
+
+            button {
+                width: 8em;
+                border-radius: 0.1em;
+                border: none;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: map-get(colors.$theme, "bg");
+    color: map-get(colors.$theme, "fg");
+    height: 150px;
+
+    h2 {
+        margin: 1em 0;
+    }
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+            .footer-selected a {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 0.2em;
+                    background-color: map-get(colors.$theme, "fg");
+                    bottom: -0.2em;
+                }
+            }
+        }
+    }
+    a {
+        margin: 0 1em;
+    }
+}
