@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="icons/Nika.png" rel="icon"/>
+        <link href="styles/index.css" rel="stylesheet"/>
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5em;
+            }
+            main pre {
+                width: calc(100% - 10em);
+                white-space: pre-wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav id="header-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="header-home">
+                <a href="index.html">
+                    <img src="icons/Nika.png"/>
+                </a>
+            </div>
+            <nav id="header-sns">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="icons/youtube_white.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="icons/tiktok.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="icons/Instagram_white.png"/>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>個人情報保護方針 Sample</h2>
+            <pre id="privacy-content"></pre>
+        </main>
+        <footer>
+            <h2><a href="index.html">NIKA</a></h2>
+            <nav id="footer-menu">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="footer-selected">
+                        <a href="privacy.html">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <script>
+            window.addEventListener("load", function() {
+                fetch("privacypolicy.txt").then(res => res.text().then(text =>
+                    document.getElementById("privacy-content").textContent = text
+                ));
+            })
+        </script>
+    </body>
+</html>

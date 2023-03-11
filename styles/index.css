@@ -1,5 +1,11 @@
 @charset "UTF-8";
+html {
+  height: 100px;
+  min-height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
@@ -33,6 +39,9 @@ header nav ul a {
 header nav#header-menu ul {
   justify-content: start;
 }
+header nav#header-menu ul li:hover {
+  color: gray;
+}
 header nav#header-menu ul .header-selected a {
   position: relative;
 }
@@ -61,17 +70,65 @@ header #header-home img {
 header #header-sns img {
   height: 1em;
 }
+header #header-sns img:hover {
+  transform: scale(110%);
+}
 
+main {
+  min-height: calc(100% - 250px);
+}
 main h2 {
   margin: 0;
-  margin-top: 1em;
   font-size: 3em;
   letter-spacing: 0.05em;
+}
+main p {
+  margin: 0;
 }
 main > section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 150px;
+}
+footer h2 {
+  margin: 1em 0;
+}
+footer nav#footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+footer nav#footer-menu ul a {
+  display: flex;
+  align-items: center;
+}
+footer nav#footer-menu ul li:hover {
+  color: gray;
+}
+footer nav#footer-menu ul .footer-selected a {
+  position: relative;
+}
+footer nav#footer-menu ul .footer-selected a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2em;
+  background-color: white;
+  bottom: -0.2em;
+}
+footer a {
+  margin: 0 1em;
 }
 
 section#index-photo img {
@@ -119,9 +176,13 @@ section#index-sns ul li a {
 }
 section#index-sns ul li a img {
   height: 10em;
+  margin: 1em;
 }
 section#index-sns ul li a p {
   text-align: center;
+}
+section#index-sns ul li a:hover img {
+  transform: scale(105%);
 }
 
 section#index-contact {
@@ -192,41 +253,4 @@ section#index-contact form dl #index-contact-submit button {
   width: 8em;
   border-radius: 0.1em;
   border: none;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  color: white;
-  height: 150px;
-}
-footer h2 {
-  margin: 1em 0;
-}
-footer nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-footer nav ul a {
-  display: flex;
-  align-items: center;
-}
-footer nav ul .footer-selected a {
-  position: relative;
-}
-footer nav ul .footer-selected a::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.2em;
-  background-color: white;
-  bottom: -0.2em;
-}
-footer a {
-  margin: 0 1em;
 }/*# sourceMappingURL=index.css.map */
