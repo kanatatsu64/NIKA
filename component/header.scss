@@ -1,0 +1,73 @@
+@use "../styles/colors";
+@import "../styles/default";
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: map-get(colors.$theme, "bg");
+    color: map-get(colors.$theme, "fg");
+
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+        }
+        &#menu ul {
+            justify-content: start;
+
+            li {
+                &:hover {
+                    color: map-get(colors.$dark, "fg");
+                }
+            }
+            .selected a {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 0.2em;
+                    background-color: map-get(colors.$theme, "fg");
+                    bottom: -0.2em;
+                }
+            }
+        }
+        &#sns ul {
+            justify-content: end;
+        }
+    }
+    a {
+        margin: 0 1em;
+    }
+
+    #menu,
+    #sns {
+        flex: 1 1 0;
+        margin: 0 2em;
+    }
+    #home {
+        img {
+            height: 3em;
+        }
+    }
+    #sns {
+        img {
+            height: 1em;
+
+            &:hover {
+                transform: scale(110%);
+            }
+        }
+    }
+}

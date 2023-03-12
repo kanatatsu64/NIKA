@@ -9,70 +9,6 @@ body {
   margin: 0;
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
-body a {
-  text-decoration: none;
-  color: inherit;
-}
-body a.a-link {
-  text-decoration: underline;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background-color: black;
-  color: white;
-}
-header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-header nav ul a {
-  display: flex;
-  align-items: center;
-}
-header nav#header-menu ul {
-  justify-content: start;
-}
-header nav#header-menu ul li:hover {
-  color: gray;
-}
-header nav#header-menu ul .header-selected a {
-  position: relative;
-}
-header nav#header-menu ul .header-selected a::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.2em;
-  background-color: white;
-  bottom: -0.2em;
-}
-header nav#header-sns ul {
-  justify-content: end;
-}
-header a {
-  margin: 0 1em;
-}
-header #header-menu,
-header #header-sns {
-  flex: 1 1 0;
-  margin: 0 2em;
-}
-header #header-home img {
-  height: 3em;
-}
-header #header-sns img {
-  height: 1em;
-}
-header #header-sns img:hover {
-  transform: scale(110%);
-}
 
 main {
   min-height: calc(100% - 250px);
@@ -91,44 +27,12 @@ main > section {
   align-items: center;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  color: white;
-  height: 150px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-footer h2 {
-  margin: 1em 0;
-}
-footer nav#footer-menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-footer nav#footer-menu ul a {
-  display: flex;
-  align-items: center;
-}
-footer nav#footer-menu ul li:hover {
-  color: gray;
-}
-footer nav#footer-menu ul .footer-selected a {
-  position: relative;
-}
-footer nav#footer-menu ul .footer-selected a::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.2em;
-  background-color: white;
-  bottom: -0.2em;
-}
-footer a {
-  margin: 0 1em;
+a.a-link {
+  text-decoration: underline;
 }
 
 section#index-photo img {

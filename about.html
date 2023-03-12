@@ -2,7 +2,9 @@
 <html>
     <head>
         <link href="icons/Nika.png" rel="icon"/>
-        <link href="styles/index.css" rel="stylesheet"/>
+        <link href="styles/default.css" rel="stylesheet"/>
+        <script type="module" src="component/header.js"></script>
+        <script type="module" src="component/footer.js"></script>
         <style>
             main {
                 display: flex;
@@ -13,64 +15,11 @@
         </style>
     </head>
     <body>
-        <header>
-            <nav id="header-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="header-selected">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="header-home">
-                <a href="index.html">
-                    <img src="icons/Nika.png"/>
-                </a>
-            </div>
-            <nav id="header-sns">
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="icons/youtube_white.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@nika_basket">
-                            <img src="icons/tiktok.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/nika_3x3_team/">
-                            <img src="icons/Instagram_white.svg"/>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <nika-header></nika-header>
         <main>
             <h2>NIKA</h2>
             <p>preparing...</p>
         </main>
-        <footer>
-            <h2><a href="index.html">NIKA</a></h2>
-            <nav id="footer-menu">
-                <ul>
-                    <li class="footer-selected">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="privacy.html">Privacy</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
+        <nika-footer></nika-footer>
     </body>
 </html>

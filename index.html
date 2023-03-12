@@ -3,53 +3,11 @@
     <head>
         <link href="icons/Nika.png" rel="icon"/>
         <link href="styles/index.css" rel="stylesheet"/>
+        <script type="module" src="component/header.js"></script>
+        <script type="module" src="component/footer.js"></script>
     </head>
     <body>
-        <header>
-            <nav id="header-menu">
-                <ul>
-                    <li class="header-selected">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="header-home">
-                <a href="index.html">
-                    <img src="icons/Nika.png"/>
-                </a>
-            </div>
-            <nav id="header-sns">
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/nika_3x3"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="icons/twitter.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@nika_basket"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="icons/tiktok.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/nika_3x3_team/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="icons/Instagram_white.svg"/>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <nika-header></nika-header>
         <main>
             <section id="index-photo">
                 <img src="images/team.png" alt="team photo"/>
@@ -135,21 +93,6 @@
                 </form>
             </section>
         </main>
-        <footer>
-            <h2><a href="index.html">NIKA</a></h2>
-            <nav id="footer-menu">
-                <ul>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="privacy.html">Privacy</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
+        <nika-footer></nika-footer>
     </body>
 </html>

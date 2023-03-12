@@ -1,0 +1,93 @@
+@charset "UTF-8";
+html {
+  height: 100px;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+main {
+  min-height: calc(100% - 250px);
+}
+main h2 {
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+}
+main p {
+  margin: 0;
+}
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a.a-link {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header nav ul a {
+  display: flex;
+  align-items: center;
+}
+header nav#menu ul {
+  justify-content: start;
+}
+header nav#menu ul li:hover {
+  color: gray;
+}
+header nav#menu ul .selected a {
+  position: relative;
+}
+header nav#menu ul .selected a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2em;
+  background-color: white;
+  bottom: -0.2em;
+}
+header nav#sns ul {
+  justify-content: end;
+}
+header a {
+  margin: 0 1em;
+}
+header #menu,
+header #sns {
+  flex: 1 1 0;
+  margin: 0 2em;
+}
+header #home img {
+  height: 3em;
+}
+header #sns img {
+  height: 1em;
+}
+header #sns img:hover {
+  transform: scale(110%);
+}/*# sourceMappingURL=header.css.map */
