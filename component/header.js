@@ -18,8 +18,11 @@ switch (document.location.pathname) {
     case "/about.html":
         select("about");
         break;
-    case "/gallery.html":
-        select("gallery");
+    case "/school.html":
+        select("school");
+        break;
+    case "/partner.html":
+        select("partner");
         break;
 }
 
