@@ -22,13 +22,13 @@
         <nika-header></nika-header>
         <main>
             <h2>個人情報保護方針 Sample</h2>
-            <pre id="privacy-content"></pre>
+            <pre id="policy"></pre>
         </main>
         <nika-footer></nika-footer>
         <script>
             window.addEventListener("load", function() {
                 fetch("privacypolicy.txt").then(res => res.text().then(text =>
-                    document.getElementById("privacy-content").textContent = text
+                    document.getElementById("policy").textContent = text
                 ));
             })
         </script>

@@ -1,23 +1,23 @@
 @use "colors";
 @import "default";
 
-section#index-photo {
+section#photo {
     img {
         width: 100%;
     }
 }
 
-section#index-news {
+section#news {
     color: map-get(colors.$theme, "fg");
     background-color: map-get(colors.$theme, "bg");
     
-    #index-news-content {
+    #news-content {
         display: flex;
         flex-direction: column;
         width: 500px;
         height: 500px;
 
-        #index-news-frame {
+        #news-frame {
             display: flex;
             align-items: center;
             width: 500px;
@@ -33,7 +33,7 @@ section#index-news {
     }
 }
 
-section#index-sns {
+section#sns {
     background-color: map-get(colors.$theme, "bg");
     color: map-get(colors.$theme, "fg");
 
@@ -64,7 +64,7 @@ section#index-sns {
     }
 }
 
-section#index-contact {
+section#contact {
     color: map-get(colors.$light, "fg");
     background-color: map-get(colors.$light, "bg");
 
@@ -88,19 +88,19 @@ section#index-contact {
                 border-radius: 0.1em;
             }
         }
-        #index-contact-name {
+        #contact-name {
             grid-column: 1;
             grid-row: 1;
         }
-        #index-contact-email {
+        #contact-email {
             grid-column: 2;
             grid-row: 1;
         }
-        #index-contact-tel {
+        #contact-tel {
             grid-column: 3;
             grid-row: 1;
         }
-        #index-contact-content {
+        #contact-content {
             grid-column: 1 / 4;
             grid-row: 2;
 
@@ -114,7 +114,7 @@ section#index-contact {
                 border-radius: 0.1em;
             }
         }
-        #index-contact-privacy {
+        #contact-privacy {
             grid-column: 1 / 4;
             grid-row: 3;
             display: flex;
@@ -124,7 +124,7 @@ section#index-contact {
                 margin: 0;
             }
         }
-        #index-contact-submit {
+        #contact-submit {
             grid-column: 2;
             grid-row: 4;
 

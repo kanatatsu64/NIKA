@@ -35,65 +35,65 @@ a.a-link {
   text-decoration: underline;
 }
 
-section#index-photo img {
+section#photo img {
   width: 100%;
 }
 
-section#index-news {
+section#news {
   color: white;
   background-color: black;
 }
-section#index-news #index-news-content {
+section#news #news-content {
   display: flex;
   flex-direction: column;
   width: 500px;
   height: 500px;
 }
-section#index-news #index-news-content #index-news-frame {
+section#news #news-content #news-frame {
   display: flex;
   align-items: center;
   width: 500px;
   height: 400px;
 }
-section#index-news #index-news-content #index-news-frame img {
+section#news #news-content #news-frame img {
   width: 100%;
 }
-section#index-news #index-news-content p {
+section#news #news-content p {
   margin: 0 auto;
 }
 
-section#index-sns {
+section#sns {
   background-color: black;
   color: white;
 }
-section#index-sns ul {
+section#sns ul {
   display: flex;
   list-style: none;
 }
-section#index-sns ul li {
+section#sns ul li {
   margin: 0 5em;
 }
-section#index-sns ul li a {
+section#sns ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section#index-sns ul li a img {
+section#sns ul li a img {
   height: 10em;
   margin: 1em;
 }
-section#index-sns ul li a p {
+section#sns ul li a p {
   text-align: center;
 }
-section#index-sns ul li a:hover img {
+section#sns ul li a:hover img {
   transform: scale(105%);
 }
 
-section#index-contact {
+section#contact {
   color: white;
   background-color: rgb(43, 43, 43);
 }
-section#index-contact form dl {
+section#contact form dl {
   display: grid;
   min-width: 500px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -101,11 +101,11 @@ section#index-contact form dl {
   -moz-column-gap: 1em;
        column-gap: 1em;
 }
-section#index-contact form dl dd {
+section#contact form dl dd {
   margin: 0;
   display: block;
 }
-section#index-contact form dl dd input {
+section#contact form dl dd input {
   width: 100%;
   height: 1.5em;
   padding: 0;
@@ -113,23 +113,23 @@ section#index-contact form dl dd input {
   border: 0;
   border-radius: 0.1em;
 }
-section#index-contact form dl #index-contact-name {
+section#contact form dl #contact-name {
   grid-column: 1;
   grid-row: 1;
 }
-section#index-contact form dl #index-contact-email {
+section#contact form dl #contact-email {
   grid-column: 2;
   grid-row: 1;
 }
-section#index-contact form dl #index-contact-tel {
+section#contact form dl #contact-tel {
   grid-column: 3;
   grid-row: 1;
 }
-section#index-contact form dl #index-contact-content {
+section#contact form dl #contact-content {
   grid-column: 1/4;
   grid-row: 2;
 }
-section#index-contact form dl #index-contact-content textarea {
+section#contact form dl #contact-content textarea {
   width: 100%;
   height: 4em;
   resize: none;
@@ -138,22 +138,22 @@ section#index-contact form dl #index-contact-content textarea {
   border: 0;
   border-radius: 0.1em;
 }
-section#index-contact form dl #index-contact-privacy {
+section#contact form dl #contact-privacy {
   grid-column: 1/4;
   grid-row: 3;
   display: flex;
   align-items: center;
 }
-section#index-contact form dl #index-contact-privacy p {
+section#contact form dl #contact-privacy p {
   margin: 0;
 }
-section#index-contact form dl #index-contact-submit {
+section#contact form dl #contact-submit {
   grid-column: 2;
   grid-row: 4;
   justify-self: center;
   align-self: first baseline;
 }
-section#index-contact form dl #index-contact-submit button {
+section#contact form dl #contact-submit button {
   width: 8em;
   border-radius: 0.1em;
   border: none;
