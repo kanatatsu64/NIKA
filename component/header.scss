@@ -66,11 +66,13 @@ header {
         }
     }
     #sns {
-        img {
+        svg {
+            fill: white;
+            width: 2em;
             height: 1em;
 
             &:hover {
-                transform: scale(110%);
+                fill: gray;
             }
         }
     }

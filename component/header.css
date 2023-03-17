@@ -88,9 +88,11 @@ header #sns {
 header #home img {
   height: 3em;
 }
-header #sns img {
+header #sns svg {
+  fill: white;
+  width: 2em;
   height: 1em;
 }
-header #sns img:hover {
-  transform: scale(110%);
+header #sns svg:hover {
+  fill: gray;
 }/*# sourceMappingURL=header.css.map */

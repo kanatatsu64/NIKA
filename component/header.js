@@ -29,9 +29,9 @@ switch (document.location.pathname) {
 customElements.define('nika-header',
     class extends HTMLElement {
         constructor() {
-        super();
-        const shadowRoot = this.attachShadow({mode: 'open'})
-            .appendChild(template.content.cloneNode(true));
+            super();
+            const shadowRoot = this.attachShadow({mode: 'open'})
+                .appendChild(template.content.cloneNode(true));
         }
     }
 );
