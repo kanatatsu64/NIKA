@@ -2,14 +2,21 @@
 @import "default";
 
 section#photo {
+    padding: 0;
+
     img {
         width: 100%;
     }
 }
 
-section#news {
+section#schedule {
     color: map-get(colors.$theme, "fg");
     background-color: map-get(colors.$theme, "bg");
+}
+
+section#news {
+    color: map-get(colors.$light, "fg");
+    background-color: map-get(colors.$light, "bg");
     
     #news-content {
         display: flex;
@@ -62,6 +69,16 @@ section#sns {
             }
         }
     }
+}
+
+section#goods {
+    color: map-get(colors.$theme, "fg");
+    background-color: map-get(colors.$theme, "bg");
+}
+
+section#partner {
+    color: map-get(colors.$light, "fg");
+    background-color: map-get(colors.$light, "bg");
 }
 
 section#contact {
