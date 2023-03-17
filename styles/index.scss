@@ -79,6 +79,10 @@ section#goods {
 section#partner {
     color: map-get(colors.$light, "fg");
     background-color: map-get(colors.$light, "bg");
+
+    ul {
+        margin: 0;
+    }
 }
 
 section#contact {
