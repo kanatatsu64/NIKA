@@ -71,6 +71,11 @@ section#news #news-content p {
   margin: 0 auto;
 }
 
+section#goods {
+  color: white;
+  background-color: black;
+}
+
 section#sns {
   background-color: black;
   color: white;
@@ -98,11 +103,6 @@ section#sns ul li a:hover img {
   transform: scale(105%);
 }
 
-section#goods {
-  color: white;
-  background-color: black;
-}
-
 section#partner {
   color: white;
   background-color: rgb(43, 43, 43);
@@ -114,69 +114,4 @@ section#partner ul {
 section#contact {
   color: white;
   background-color: rgb(43, 43, 43);
-}
-section#contact form dl {
-  display: grid;
-  min-width: 500px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 4em 6em 3em 3em;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
-}
-section#contact form dl dd {
-  margin: 0;
-  display: block;
-}
-section#contact form dl dd input {
-  width: 100%;
-  height: 1.5em;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  border-radius: 0.1em;
-}
-section#contact form dl #contact-name {
-  grid-column: 1;
-  grid-row: 1;
-}
-section#contact form dl #contact-email {
-  grid-column: 2;
-  grid-row: 1;
-}
-section#contact form dl #contact-tel {
-  grid-column: 3;
-  grid-row: 1;
-}
-section#contact form dl #contact-content {
-  grid-column: 1/4;
-  grid-row: 2;
-}
-section#contact form dl #contact-content textarea {
-  width: 100%;
-  height: 4em;
-  resize: none;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  border-radius: 0.1em;
-}
-section#contact form dl #contact-privacy {
-  grid-column: 1/4;
-  grid-row: 3;
-  display: flex;
-  align-items: center;
-}
-section#contact form dl #contact-privacy p {
-  margin: 0;
-}
-section#contact form dl #contact-submit {
-  grid-column: 2;
-  grid-row: 4;
-  justify-self: center;
-  align-self: first baseline;
-}
-section#contact form dl #contact-submit button {
-  width: 8em;
-  border-radius: 0.1em;
-  border: none;
 }/*# sourceMappingURL=index.css.map */

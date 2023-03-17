@@ -40,6 +40,11 @@ section#news {
     }
 }
 
+section#goods {
+    color: map-get(colors.$theme, "fg");
+    background-color: map-get(colors.$theme, "bg");
+}
+
 section#sns {
     background-color: map-get(colors.$theme, "bg");
     color: map-get(colors.$theme, "fg");
@@ -71,11 +76,6 @@ section#sns {
     }
 }
 
-section#goods {
-    color: map-get(colors.$theme, "fg");
-    background-color: map-get(colors.$theme, "bg");
-}
-
 section#partner {
     color: map-get(colors.$light, "fg");
     background-color: map-get(colors.$light, "bg");
@@ -88,75 +88,4 @@ section#partner {
 section#contact {
     color: map-get(colors.$light, "fg");
     background-color: map-get(colors.$light, "bg");
-
-    form dl {
-        display: grid;
-        min-width: 500px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 4em 6em 3em 3em;
-        column-gap: 1em;
-
-        dd {
-            margin: 0;
-            display: block;
-
-            input {
-                width: 100%;
-                height: 1.5em;
-                padding: 0;
-                margin: 0;
-                border: 0;
-                border-radius: 0.1em;
-            }
-        }
-        #contact-name {
-            grid-column: 1;
-            grid-row: 1;
-        }
-        #contact-email {
-            grid-column: 2;
-            grid-row: 1;
-        }
-        #contact-tel {
-            grid-column: 3;
-            grid-row: 1;
-        }
-        #contact-content {
-            grid-column: 1 / 4;
-            grid-row: 2;
-
-            textarea {
-                width: 100%;
-                height: 4em;
-                resize: none;
-                padding: 0;
-                margin: 0;
-                border: 0;
-                border-radius: 0.1em;
-            }
-        }
-        #contact-privacy {
-            grid-column: 1 / 4;
-            grid-row: 3;
-            display: flex;
-            align-items: center;
-
-            p {
-                margin: 0;
-            }
-        }
-        #contact-submit {
-            grid-column: 2;
-            grid-row: 4;
-
-            justify-self: center;
-            align-self: first baseline;
-
-            button {
-                width: 8em;
-                border-radius: 0.1em;
-                border: none;
-            }
-        }
-    }
 }
