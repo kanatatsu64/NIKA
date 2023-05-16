@@ -61,6 +61,7 @@ section#news #news-content {
   flex-direction: column;
   width: 500px;
   height: 500px;
+  color: white;
 }
 section#news #news-content #news-frame {
   display: flex;
