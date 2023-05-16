@@ -72,6 +72,7 @@ section#sns {
 section#contact {
     color: map-get(colors.$theme, "fg3");
     background-color: map-get(colors.$theme, "bg");
+    padding-bottom: 3em;
 
     hr {
         border-color: map-get(colors.$theme, "fg3");
