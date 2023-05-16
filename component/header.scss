@@ -6,7 +6,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: map-get(colors.$theme, "bg");
+    background-color: map-get(colors.$theme, "bg2");
     color: map-get(colors.$theme, "fg");
 
     nav {

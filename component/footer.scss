@@ -6,7 +6,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: map-get(colors.$theme, "bg");
+    background-color: map-get(colors.$theme, "bg2");
     color: map-get(colors.$theme, "fg");
     height: 8em;
 

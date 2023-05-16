@@ -43,14 +43,9 @@ section#photo img {
   width: 100%;
 }
 
-section#schedule {
-  color: white;
-  background-color: black;
-}
-
 section#news {
-  color: white;
-  background-color: rgb(43, 43, 43);
+  color: rgb(243, 152, 0);
+  background-color: black;
 }
 section#news #news-content {
   display: flex;
@@ -71,14 +66,9 @@ section#news #news-content p {
   margin: 0 auto;
 }
 
-section#goods {
-  color: white;
-  background-color: black;
-}
-
 section#sns {
   background-color: black;
-  color: white;
+  color: rgb(243, 152, 0);
 }
 section#sns ul {
   display: flex;
@@ -103,15 +93,7 @@ section#sns ul li a:hover img {
   transform: scale(105%);
 }
 
-section#partner {
-  color: white;
-  background-color: rgb(43, 43, 43);
-}
-section#partner ul {
-  margin: 0;
-}
-
 section#contact {
-  color: white;
-  background-color: rgb(43, 43, 43);
+  color: rgb(250, 207, 42);
+  background-color: black;
 }/*# sourceMappingURL=index.css.map */

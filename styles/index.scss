@@ -9,14 +9,9 @@ section#photo {
     }
 }
 
-section#schedule {
-    color: map-get(colors.$theme, "fg");
-    background-color: map-get(colors.$theme, "bg");
-}
-
 section#news {
-    color: map-get(colors.$light, "fg");
-    background-color: map-get(colors.$light, "bg");
+    color: map-get(colors.$theme, "fg2");
+    background-color: map-get(colors.$theme, "bg");
     
     #news-content {
         display: flex;
@@ -40,14 +35,9 @@ section#news {
     }
 }
 
-section#goods {
-    color: map-get(colors.$theme, "fg");
-    background-color: map-get(colors.$theme, "bg");
-}
-
 section#sns {
     background-color: map-get(colors.$theme, "bg");
-    color: map-get(colors.$theme, "fg");
+    color: map-get(colors.$theme, "fg2");
 
     ul {
         display: flex;
@@ -76,16 +66,7 @@ section#sns {
     }
 }
 
-section#partner {
-    color: map-get(colors.$light, "fg");
-    background-color: map-get(colors.$light, "bg");
-
-    ul {
-        margin: 0;
-    }
-}
-
 section#contact {
-    color: map-get(colors.$light, "fg");
-    background-color: map-get(colors.$light, "bg");
+    color: map-get(colors.$theme, "fg3");
+    background-color: map-get(colors.$theme, "bg");
 }
