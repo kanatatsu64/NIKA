@@ -39,7 +39,7 @@ header {
                     }
                 }
                 &:hover {
-                    color: map-get(colors.$dark, "fg");
+                    color: map-get(colors.$theme, "fg");
 
                     &.selected a::before {
                         opacity: 0%;

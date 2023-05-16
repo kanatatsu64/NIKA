@@ -39,6 +39,9 @@ section#sns {
     background-color: map-get(colors.$theme, "bg");
     color: map-get(colors.$theme, "fg2");
 
+    hr {
+        border-color: map-get(colors.$theme, "fg2");
+    }
     ul {
         display: flex;
         list-style: none;
@@ -69,4 +72,8 @@ section#sns {
 section#contact {
     color: map-get(colors.$theme, "fg3");
     background-color: map-get(colors.$theme, "bg");
+
+    hr {
+        border-color: map-get(colors.$theme, "fg3");
+    }
 }
