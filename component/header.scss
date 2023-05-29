@@ -69,17 +69,19 @@ header {
             color: map-get(colors.$theme, "bg2");
             font-family: 'Broadway', sans-serif;
             padding: 1em 2em;
+            width: 100%;
+            box-sizing: border-box;
 
             ul {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+                font-size: 3em;
 
                 li {
-                    font-size: 3em;
-
                     a {
                         display: inline;
                         cursor: pointer;
+                        margin: 0;
                     }
                 }
             }

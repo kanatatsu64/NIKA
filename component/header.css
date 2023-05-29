@@ -118,17 +118,18 @@ header nav#menu_nav {
   color: rgb(243, 152, 0);
   font-family: "Broadway", sans-serif;
   padding: 1em 2em;
+  width: 100%;
+  box-sizing: border-box;
 }
 header nav#menu_nav ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-header nav#menu_nav ul li {
+  grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
   font-size: 3em;
 }
 header nav#menu_nav ul li a {
   display: inline;
   cursor: pointer;
+  margin: 0;
 }
 header nav#sns ul {
   justify-content: end;
