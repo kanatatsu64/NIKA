@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/default.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div id="header_title">
+            news
+        </div>
+        <img id="header_icon_1" src="icons/Nika.png">
+        <img id="header_icon_2" src="icons/Nika.png">
+        <img id="header_icon_3" src="icons/Nika.png">
+    </header>    
+    <main>
+        <article>
+            <a href="news_20230531.html">
+                <img src="images/news_20230531_1.png"/>
+                <div class="news_about">
+                    <div class="news_caption">
+                        <span class="news_date">2023.05.31</span>
+                        <span class="news_type">イベント</span>
+                    </div>
+                    <p class="news_desc">大枝公園でバスケットボール体験会を開催しました。</p>
+                </div>
+            </a>
+        </article>
+    </main>
+    <style>
+        header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFDC00;
+            padding: 0.3em 0;
+            font-size: 2em;
+            line-height: 1em;
+        }
+        #header_title {
+            display: flex;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 1px solid black;
+            width: 5em;
+            height: 1em;
+            padding: 0.4em 0;
+            font-family: 'Broadway', sans-serif;
+        }
+        header img {
+            position: absolute;
+        }
+        #header_icon_1 {
+            height: 0.7em;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(-2.5em, 0.9em);
+        }
+        #header_icon_2 {
+            height: 0.6em;
+            top: 0;
+            right: 50%;
+        }
+        #header_icon_3 {
+            height: 1.2em;
+            bottom: 50%;
+            left: 50%;
+            transform: scale(-1, 1) translate(-2.4em, 0.9em);
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        article {
+            font-family: 'Kozuka Gothic Pr6N','小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+            max-width: 800px;
+            margin: 1em 0;
+        }
+        article>a {
+            display: flex;
+        }
+        article>a:hover {
+            border-color: gray;
+            background-color: #EEEEEE;
+        }
+        .news_about {
+            margin-left: 1em;
+        }
+        .news_caption {
+            position: relative;
+            font-size: 1em;
+            height: 4em;
+        }
+        .news_date {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: inline-block;
+            font-size: 1em;
+            line-height: 1em;
+            height: 1em;
+            color: #A0A0A0;
+        }
+        .news_type {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            color: white;
+            background-color: #261F87;
+            font-size: 1em;
+            line-height: 3em;
+            height: 3em;
+            vertical-align: bottom;
+            padding: 0 1em;
+        }
+        .news_desc {
+            font-size: 2em;
+            margin: 0;
+        }
+        img {
+            height: 220px;
+        }
+    </style>
+</body>
+</html>

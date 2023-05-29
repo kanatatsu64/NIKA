@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/default.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div id="header_title">
+            news
+        </div>
+        <img id="header_icon_1" src="icons/Nika.png">
+        <img id="header_icon_2" src="icons/Nika.png">
+        <img id="header_icon_3" src="icons/Nika.png">
+    </header>    
+    <main>
+        <article>
+            <div class="news_caption">
+                <span class="news_date">2023.05.31</span>
+                <span class="news_type">イベント</span>
+            </div>
+            <p class="news_desc">大枝公園でバスケットボール体験会を開催しました。</p>
+            <div class="news_pictures">
+                <img src="images/news_20230531_1.png"/>
+                <img src="images/news_20230531_2.png"/>
+            </div>
+            <dl class="news_info">
+                <div>
+                    <dd>日時</dd>
+                    <dt>3月21日火曜日　12:00～</dt>
+                </div>
+                <div>
+                    <dd>会場</dd>
+                    <dt>大枝公園（守口市）</dt>
+                </div>
+                <div>
+                    <dd>講師</dd>
+                    <dt>NIKA所属選手・スタッフ</dt>
+                </div>
+                <div>
+                    <dd>参加者</dd>
+                    <dt>小学生20名</dt>
+                </div>
+            </dl>
+            <p class="news_content">
+                天気には恵まれませんでしたが、子供たちの笑顔溢れるバスケットボール体験会になりました。<br/>
+            </p>
+            <p class="news_content">
+                NIKAでは、6月6日から大枝公園にてバスケットボールスクールを開講しますので、選手にとってもいい経験となりました。<br/>
+                NIKAはこれからも、バスケットボールを通じて子供たちに夢と笑顔を与えられるよう活動してまいります。
+            </p>
+        </article>
+    </main>
+    <style>
+        header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFDC00;
+            padding: 0.3em 0;
+            font-size: 2em;
+            line-height: 1em;
+        }
+        #header_title {
+            display: flex;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 1px solid black;
+            width: 5em;
+            height: 1em;
+            padding: 0.4em 0;
+            font-family: 'Broadway', sans-serif;
+        }
+        header img {
+            position: absolute;
+        }
+        #header_icon_1 {
+            height: 0.7em;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(-2.5em, 0.9em);
+        }
+        #header_icon_2 {
+            height: 0.6em;
+            top: 0;
+            right: 50%;
+        }
+        #header_icon_3 {
+            height: 1.2em;
+            bottom: 50%;
+            left: 50%;
+            transform: scale(-1, 1) translate(-2.4em, 0.9em);
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            font-family: 'Kozuka Gothic Pr6N','小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+            max-width: 800px;
+        }
+        .news_caption {
+            font-size: 1em;
+            line-height: 1.8em;
+            height: 1.8em;
+            margin-top: 1em;
+            margin-bottom: 0.2em;
+        }
+        .news_date {
+            display: inline-block;
+            height: 100%;
+            color: #A0A0A0;
+        }
+        .news_type {
+            display: inline-block;
+            color: white;
+            background-color: #261F87;
+            font-size: 0.85em;
+            height: 100%;
+            vertical-align: bottom;
+            padding: 0 0.3em;
+        }
+        .news_desc {
+            margin: 0;
+        }
+        .news_pictures {
+            align-self: center;
+        }
+        .news_pictures img {
+            height: 220px;
+            margin: 0 0.5em;
+        }
+        .news_info {
+            margin: 0;
+        }
+        .news_info div {
+            height: 1.5em;
+            line-height: 1.5em;
+            margin: 0.5em 0;
+        }
+        .news_info dd {
+            display: inline-block;
+            background-color: #CCCCCC;
+            width: 4em;
+            height: 100%;
+            margin: 0;
+            text-align: center;
+        }
+        .news_info dt {
+            display: inline-block;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</body>
+</html>

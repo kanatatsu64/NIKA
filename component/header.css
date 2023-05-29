@@ -10,6 +10,20 @@ body {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
 main {
   min-height: calc(100% - 250px);
 }
@@ -24,7 +38,7 @@ main hr {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   border-top: 3px solid white;
 }
 main p {
@@ -46,6 +60,7 @@ a.a-link {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +82,15 @@ header nav ul a {
 header nav#menu ul {
   justify-content: start;
 }
+header nav#menu ul li#menu_tab #menu_tab_btn {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  padding: 0.3em;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
 header nav#menu ul li.selected a {
   position: relative;
 }
@@ -83,6 +107,28 @@ header nav#menu ul li:hover {
 }
 header nav#menu ul li:hover.selected a::before {
   opacity: 0%;
+}
+header nav#menu_nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  background-color: white;
+  color: rgb(243, 152, 0);
+  font-family: "Broadway", sans-serif;
+  padding: 1em 2em;
+}
+header nav#menu_nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header nav#menu_nav ul li {
+  font-size: 3em;
+}
+header nav#menu_nav ul li a {
+  display: inline;
+  cursor: pointer;
 }
 header nav#sns ul {
   justify-content: end;
@@ -105,4 +151,60 @@ header #sns svg {
 }
 header #sns svg:hover {
   fill: gray;
+}
+header #menu_icon {
+  width: 1.2em;
+  height: 1em;
+  position: relative;
+  margin: 0 0.3em;
+}
+header #menu_icon span {
+  transition: width 0.2s, right 0.2s, left 0.2s;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+header #menu_icon #menu_icon_top {
+  top: 0;
+  left: 0px;
+  right: 0px;
+}
+header #menu_icon #menu_icon_middle {
+  background: none;
+  height: 0;
+  top: calc(50% - 1px);
+}
+header #menu_icon #menu_icon_middle:before, header #menu_icon #menu_icon_middle:after {
+  content: "";
+  transition: all 0.2s;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: rotate(0deg);
+}
+header #menu_icon #menu_icon_bottom {
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+}
+header.open #menu_icon #menu_icon_top {
+  left: 100%;
+  width: 0px;
+}
+header.open #menu_icon #menu_icon_middle:before {
+  transform: rotate(135deg);
+}
+header.open #menu_icon #menu_icon_middle:after {
+  transform: rotate(45deg);
+}
+header.open #menu_icon #menu_icon_bottom {
+  right: 100%;
+  width: 0px;
+}
+header.open #menu_nav {
+  display: block;
 }/*# sourceMappingURL=header.css.map */

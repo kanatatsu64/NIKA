@@ -18,11 +18,8 @@ switch (document.location.pathname) {
     case "/about.html":
         select("about");
         break;
-    case "/school.html":
-        select("school");
-        break;
-    case "/partner.html":
-        select("partner");
+    case "/players.html":
+        select("players");
         break;
 }
 
@@ -30,8 +27,17 @@ customElements.define('nika-header',
     class extends HTMLElement {
         constructor() {
             super();
-            const shadowRoot = this.attachShadow({mode: 'open'})
-                .appendChild(template.content.cloneNode(true));
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.appendChild(template.content.cloneNode(true));
+            shadowRoot.querySelector("#menu_tab_btn").onclick = () => {
+                var header = shadowRoot.querySelector("header");
+                var isOpen = header.classList.contains("open");
+                if (isOpen) {
+                    header.classList.remove("open");
+                } else {
+                    header.classList.add("open");
+                }
+            };
         }
     }
 );
