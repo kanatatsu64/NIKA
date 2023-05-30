@@ -208,4 +208,21 @@ header.open #menu_icon #menu_icon_bottom {
 }
 header.open #menu_nav {
   display: block;
+}
+
+@media (max-width: 800px) {
+  #menu li {
+    display: none;
+  }
+  #menu li#menu_tab {
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  header {
+    flex-direction: row-reverse;
+  }
+  #sns li {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */

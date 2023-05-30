@@ -179,3 +179,20 @@ header {
         }
     }
 }
+@media (max-width: 800px) {
+    #menu li {
+        display: none;
+
+        &#menu_tab {
+            display: block;
+        }
+    }
+}
+@media (max-width: 450px) {
+    header {
+        flex-direction: row-reverse;
+    }
+    #sns li {
+        display: none;
+    }
+}
