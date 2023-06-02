@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="component/news_header.js"></script>
     <link href="styles/default.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <div id="header_title">
-            news
-        </div>
-        <img id="header_icon_1" src="icons/Nika.png">
-        <img id="header_icon_2" src="icons/Nika.png">
-        <img id="header_icon_3" src="icons/Nika.png">
-    </header>    
+    <nika-news-header></nika-news-header>
     <main>
         <article>
             <a href="news_20230531.html">
@@ -30,48 +24,6 @@
         </article>
     </main>
     <style>
-        header {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #FFDC00;
-            padding: 0.3em 0;
-            font-size: 2em;
-            line-height: 1em;
-        }
-        #header_title {
-            display: flex;
-            z-index: 1;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            border: 1px solid black;
-            width: 5em;
-            height: 1em;
-            padding: 0.4em 0;
-            font-family: 'Broadway', sans-serif;
-        }
-        header img {
-            position: absolute;
-        }
-        #header_icon_1 {
-            height: 0.7em;
-            bottom: 50%;
-            right: 50%;
-            transform: translate(-2.5em, 0.9em);
-        }
-        #header_icon_2 {
-            height: 0.6em;
-            top: 0;
-            right: 50%;
-        }
-        #header_icon_3 {
-            height: 1.2em;
-            bottom: 50%;
-            left: 50%;
-            transform: scale(-1, 1) translate(-2.4em, 0.9em);
-        }
         main {
             display: flex;
             flex-direction: column;

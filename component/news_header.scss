@@ -7,7 +7,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: map-get(colors.$theme, "bg2");
+    background-color: #FFDC00;
     color: map-get(colors.$theme, "fg");
 
     nav {
@@ -70,6 +70,7 @@ header {
             /* font-family: 'Broadway', sans-serif; */
             width: 100%;
             box-sizing: border-box;
+            z-index: 2;
 
             ul {
                 display: grid;
@@ -104,8 +105,47 @@ header {
         margin: 0 2em;
     }
     #home {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFDC00;
+        color: black;
+        padding: 0.3em 0;
+        font-size: 2em;
+        line-height: 1em;
+
+        #header_title {
+            display: flex;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 1px solid black;
+            width: 5em;
+            height: 1em;
+            padding: 0.4em 0;
+            font-family: 'Broadway', sans-serif;
+        }
         img {
-            height: 3em;
+            position: absolute;
+        }
+        #header_icon_1 {
+            height: 0.7em;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(-2.5em, 0.9em);
+        }
+        #header_icon_2 {
+            height: 0.6em;
+            top: 0;
+            right: 50%;
+        }
+        #header_icon_3 {
+            height: 1.2em;
+            bottom: 50%;
+            left: 50%;
+            transform: scale(-1, 1) translate(-2.4em, 0.9em);
         }
     }
     #sns {

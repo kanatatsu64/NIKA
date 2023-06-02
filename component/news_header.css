@@ -65,7 +65,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100px;
-  background-color: rgb(243, 152, 0);
+  background-color: #FFDC00;
   color: white;
 }
 header nav ul {
@@ -119,6 +119,7 @@ header nav#menu_nav {
   /* font-family: 'Broadway', sans-serif; */
   width: 100%;
   box-sizing: border-box;
+  z-index: 2;
 }
 header nav#menu_nav ul {
   display: grid;
@@ -147,8 +148,48 @@ header #sns {
   flex: 1 1 0;
   margin: 0 2em;
 }
+header #home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDC00;
+  color: black;
+  padding: 0.3em 0;
+  font-size: 2em;
+  line-height: 1em;
+}
+header #home #header_title {
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  width: 5em;
+  height: 1em;
+  padding: 0.4em 0;
+  font-family: "Broadway", sans-serif;
+}
 header #home img {
-  height: 3em;
+  position: absolute;
+}
+header #home #header_icon_1 {
+  height: 0.7em;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(-2.5em, 0.9em);
+}
+header #home #header_icon_2 {
+  height: 0.6em;
+  top: 0;
+  right: 50%;
+}
+header #home #header_icon_3 {
+  height: 1.2em;
+  bottom: 50%;
+  left: 50%;
+  transform: scale(-1, 1) translate(-2.4em, 0.9em);
 }
 header #sns svg {
   fill: white;
@@ -267,4 +308,4 @@ header.open #menu_nav {
   header #sns li {
     display: none;
   }
-}/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=news_header.css.map */
