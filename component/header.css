@@ -242,6 +242,15 @@ header.open #menu_nav {
   header nav#menu ul li#menu_tab {
     display: block;
   }
+  header nav#menu ul li#menu_tab #menu_icon {
+    transform: scale(120%);
+  }
+  header nav#menu ul li#menu_tab #menu_tab_btn {
+    border: none;
+  }
+  header nav#menu ul li#menu_tab #menu_tab_text {
+    display: none;
+  }
   header nav#menu_nav {
     width: 50%;
     right: 0;

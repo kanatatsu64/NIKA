@@ -210,6 +210,16 @@ header {
 
                     &#menu_tab {
                         display: block;
+                        
+                        #menu_icon {
+                            transform: scale(120%);
+                        }
+                        #menu_tab_btn {
+                            border: none;
+                        }
+                        #menu_tab_text {
+                            display: none;
+                        }
                     }
                 }
             }
