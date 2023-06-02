@@ -134,6 +134,15 @@ header nav#menu_nav ul li a {
   cursor: pointer;
   margin: 0;
 }
+header nav#menu_nav ul li a::before {
+  display: inline-block;
+  content: "";
+  height: 0;
+  border-left: 0.3em solid rgb(243, 152, 0);
+  border-top: 0.3em solid transparent;
+  border-bottom: 0.3em solid transparent;
+  margin-right: 0.5em;
+}
 header nav#menu_nav ul li:hover {
   background-color: lightgray;
 }
@@ -170,6 +179,9 @@ header #home #header_title {
   height: 1em;
   padding: 0.4em 0;
   font-family: "Broadway", sans-serif;
+}
+header #home a {
+  margin: 0 1.2em;
 }
 header #home img {
   position: absolute;
@@ -263,6 +275,7 @@ header.open #menu_nav {
   header nav#menu {
     display: flex;
     justify-content: end;
+    margin: 0;
     margin-right: 2em;
   }
   header nav#menu ul {
@@ -273,6 +286,9 @@ header.open #menu_nav {
   }
   header nav#menu ul li#menu_tab {
     display: block;
+  }
+  header nav#menu ul li#menu_tab #menu_tab_text {
+    display: none;
   }
   header nav#menu_nav {
     width: 50%;
@@ -295,15 +311,6 @@ header.open #menu_nav {
   }
   header nav#menu_nav ul li:hover {
     background-color: inherit;
-  }
-  header nav#menu_nav ul li a::before {
-    display: inline-block;
-    content: "";
-    height: 0;
-    border-left: 0.3em solid rgb(243, 152, 0);
-    border-top: 0.3em solid transparent;
-    border-bottom: 0.3em solid transparent;
-    margin-right: 0.5em;
   }
   header #sns li {
     display: none;
