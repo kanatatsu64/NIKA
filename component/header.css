@@ -122,11 +122,13 @@ header nav#menu_nav {
 }
 header nav#menu_nav ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
-  font-size: min(3.5vw, 3em);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  font-size: min(3.2vw, 3em);
+  width: 100%;
 }
 header nav#menu_nav ul li {
   padding: 0.25em 0.5em;
+  white-space: nowrap;
 }
 header nav#menu_nav ul li a {
   display: inline;
