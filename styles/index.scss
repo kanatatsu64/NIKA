@@ -14,8 +14,6 @@ section#news {
     background-color: map-get(colors.$theme, "bg");
     
     #news-content {
-        display: flex;
-        flex-direction: column;
         max-width: 100%;
         width: 500px;
         height: 500px;
@@ -34,6 +32,7 @@ section#news {
         }
         p {
             margin: 0 auto;
+            align-self: flex-start;
         }
     }
 }

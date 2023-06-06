@@ -71,8 +71,6 @@ section#news {
   background-color: black;
 }
 section#news #news-content {
-  display: flex;
-  flex-direction: column;
   max-width: 100%;
   width: 500px;
   height: 500px;
@@ -90,6 +88,7 @@ section#news #news-content #news-frame img {
 }
 section#news #news-content p {
   margin: 0 auto;
+  align-self: flex-start;
 }
 
 section#sns {
