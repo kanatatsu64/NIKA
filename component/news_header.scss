@@ -126,7 +126,6 @@ header {
 
         #header_title {
             display: flex;
-            z-index: 1;
             justify-content: center;
             align-items: center;
             background-color: white;
@@ -137,6 +136,7 @@ header {
             font-family: 'Broadway', sans-serif;
         }
         a {
+            z-index: 1;
             margin: 0 1.2em;
         }
         img {
