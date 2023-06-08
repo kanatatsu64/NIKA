@@ -22,6 +22,18 @@
                 </div>
             </a>
         </article>
+        <article>
+            <a href="news_20230608.html">
+                <img src="images/news_20230608_thumb.png"/>
+                <div class="news_about">
+                    <div class="news_caption">
+                        <span class="news_date">2023.06.08</span>
+                        <span class="news_type">イベント</span>
+                    </div>
+                    <p class="news_desc">【告知】大枝公園でシュート体験会を開催します。</p>
+                </div>
+            </a>
+        </article>
     </main>
     <style>
         main {
@@ -32,7 +44,8 @@
         article {
             font-family: 'Kozuka Gothic Pr6N','小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
             max-width: 800px;
-            margin: 1em;
+            padding: 1em 0;
+            border-bottom: 2px solid lightgray;
         }
         article>a {
             display: flex;
@@ -78,9 +91,9 @@
         }
         img {
             display: block;
-            aspect-ratio: 16/12;
-            max-width: 50%;
-            max-height: 220px;
+            aspect-ratio: 4/3;
+            width: 240px;
+            height: 180px;
             object-fit: contain;
         }
         @media (max-width: 550px) {
@@ -108,6 +121,13 @@
                 height: 1em;
                 vertical-align: bottom;
                 padding: 0.5em 0.5em;
+            }
+        }
+        @media (max-width: 550px) {
+            img {
+                width: auto;
+                height: auto;
+                max-width: 50%;
             }
         }
     </style>
