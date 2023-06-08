@@ -1,0 +1,107 @@
+@use "colors";
+@import "default";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5em;
+}
+
+section {
+    display: block !important;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+
+    h2 {
+        color: map-get(colors.$theme, "bg2");
+        text-align: start;
+        font-size: 1.5em;
+    }
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10em);
+    grid-gap: 1.5em;
+    width: 100%;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        margin: 0;
+        width: 10em;
+        height: 10em;
+        box-sizing: border-box;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 50%;
+            flex: 1;
+            object-fit: cover;
+        }
+        figcaption {
+            background-color: map-get(colors.$theme, "bg2");
+            color: white;
+            padding: 0.5em;
+            flex: 0;
+
+            aside {
+                line-height: 1em;
+                font-size: 0.8em;
+            }
+            h3 {
+                margin: 0;
+                text-align: center;
+                line-height: 1.2em;
+                font-size: 1.5em;
+            }
+        }
+        div.dummy_profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        margin: 0;
+    }
+    section {
+        width: auto;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+
+        figure {
+            width: min(40vw, 10em);
+            height: min(40vw, 10em);
+
+            figcaption {
+                font-size: min(1em, 4vw);
+            }
+        }
+    }
+}
+
+img {
+    &#kohei_profile,
+    &#kei_profile,
+    &#yuusuke_profile,
+    &#yamamoto_profile,
+    &#jyunya_profile {
+        object-fit: contain;
+    }
+    &#nakatani_profile {
+        object-fit: cover;
+        object-position: top;
+    }
+}

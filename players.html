@@ -2,15 +2,101 @@
 <html>
     <head>
         <link href="icons/Nika.png" rel="icon"/>
-        <link href="styles/preparing.css" rel="stylesheet"/>
-        <script type="module" src="component/header.js"></script>
-        <script type="module" src="component/footer.js"></script>
+        <link href="styles/players.css" rel="stylesheet"/>
+        <script type="module" src="component/players_header.js"></script>
     </head>
     <body>
-        <nika-header></nika-header>
+        <players-header></players-header>
         <main>
-            <h2>NIKA</h2>
-            <p>preparing...</p>
+            <section>
+                <h2>選手</h2>
+                <ul>
+                    <article>
+                        <figure>
+                            <img id="kohei_profile" src="images/player1.png"/>
+                            <figcaption>
+                                <aside>#11</aside>
+                                <h3>KOHEI</h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img id="kei_profile" src="images/player2.png"/>
+                            <figcaption>
+                                <aside>#00</aside>
+                                <h3>KEI</h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img id="yuusuke_profile" src="images/player3.png"/>
+                            <figcaption>
+                                <aside>#06</aside>
+                                <h3>YUUSUKE</h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img id="yamamoto_profile" src="images/player4.png"/>
+                            <figcaption>
+                                <aside>#07</aside>
+                                <h3>YAMATO</h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img id="jyunya_profile" src="images/player5.png"/>
+                            <figcaption>
+                                <aside>#00</aside>
+                                <h3>JYUNYA</h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </ul>
+            </section>
+            <section>
+                <h2>練習生</h2>
+                <ul>
+                    <article>
+                        <figure>
+                            <div class="dummy_profile">
+                                <span>Comming soon</span>
+                                <span>...</span>
+                            </div>
+                        </figure>
+                    </article>
+                </ul>
+            </section>
+            <section>
+                <h2>代表</h2>
+                <ul>
+                    <article>
+                        <figure>
+                            <img id="nakatani_profile" src="images/nakatani.png"/>
+                            <figcaption>
+                                <h3>中谷ともき</h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </ul>
+            </section>
+            <section>
+                <h2>スタッフ</h2>
+                <ul>
+                    <article>
+                        <figure>
+                            <div class="dummy_profile">
+                                <span>Comming soon</span>
+                                <span>...</span>
+                            </div>
+                        </figure>
+                    </article>
+                </ul>
+            </section>
         </main>
         <nika-footer></nika-footer>
     </body>
