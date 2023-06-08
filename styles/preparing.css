@@ -24,6 +24,12 @@ button {
   font-family: inherit;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 main {
   min-height: calc(100% - 250px);
 }
