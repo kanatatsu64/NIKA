@@ -16,7 +16,7 @@
                 <div class="news_about">
                     <div class="news_caption">
                         <span class="news_date">2023.05.31</span>
-                        <span class="news_type">イベント</span>
+                        <span class="news_type event">イベント</span>
                     </div>
                     <p class="news_desc">大枝公園でバスケットボール体験会を開催しました。</p>
                 </div>
@@ -28,9 +28,22 @@
                 <div class="news_about">
                     <div class="news_caption">
                         <span class="news_date">2023.06.08</span>
-                        <span class="news_type">イベント</span>
+                        <span class="news_type event">イベント</span>
                     </div>
                     <p class="news_desc">【告知】大枝公園でシュート体験会を開催します。</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="news_20230620.html">
+                <img src="images/news/thumb/20230620.png"/>
+                <div class="news_about">
+                    <div class="news_caption">
+                        <span class="news_date">2023.06.20</span>
+                        <span class="news_type school">スクール</span>
+                    </div>
+                    <p class="news_desc">大枝公園で
+スクールを開講しました</p>
                 </div>
             </a>
         </article>
@@ -78,12 +91,17 @@
             right: 0;
             display: inline-block;
             color: white;
-            background-color: #261F87;
             font-size: inherit;
             line-height: 3em;
             height: 3em;
             vertical-align: bottom;
             padding: 0 1em;
+        }
+        .news_type.event {
+            background-color: #261F87;
+        }
+        .news_type.school {
+            background-color: #3fc840;
         }
         .news_desc {
             font-size: min(4.5vw, 2em);
