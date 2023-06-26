@@ -235,14 +235,10 @@ header {
         }
     }
 }
-@media (max-width: 550px) {
+@media (max-width: 850px) {
     header {
-        flex-direction: row-reverse;
-
         nav#menu {
             display: flex;
-            justify-content: end;
-            margin: 0;
             margin-right: 2em;
 
             ul {
@@ -253,7 +249,40 @@ header {
 
                     &#menu_tab {
                         display: block;
+                        
+                        #menu_icon {
+                            transform: scale(120%);
+                        }
+                        #menu_tab_btn {
+                            border: none;
+                        }
+                        #menu_tab_text {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    header {
+        flex-direction: row-reverse;
 
+        nav#menu {
+            display: flex;
+            justify-content: end;
+            margin-right: 2em;
+
+            ul {
+                display: block;
+
+                li {
+                    display: none;
+
+                    &#menu_tab {
+                        display: block;
+                        
                         #menu_icon {
                             transform: scale(120%);
                         }

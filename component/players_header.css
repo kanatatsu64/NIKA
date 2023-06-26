@@ -281,6 +281,30 @@ header.open #menu_nav {
   display: block;
 }
 
+@media (max-width: 850px) {
+  header nav#menu {
+    display: flex;
+    margin-right: 2em;
+  }
+  header nav#menu ul {
+    display: block;
+  }
+  header nav#menu ul li {
+    display: none;
+  }
+  header nav#menu ul li#menu_tab {
+    display: block;
+  }
+  header nav#menu ul li#menu_tab #menu_icon {
+    transform: scale(120%);
+  }
+  header nav#menu ul li#menu_tab #menu_tab_btn {
+    border: none;
+  }
+  header nav#menu ul li#menu_tab #menu_tab_text {
+    display: none;
+  }
+}
 @media (max-width: 550px) {
   header {
     flex-direction: row-reverse;
@@ -288,7 +312,6 @@ header.open #menu_nav {
   header nav#menu {
     display: flex;
     justify-content: end;
-    margin: 0;
     margin-right: 2em;
   }
   header nav#menu ul {
