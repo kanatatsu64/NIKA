@@ -21,6 +21,9 @@ switch (document.location.pathname) {
     case "/players.html":
         select("players");
         break;
+    case "/partner.html":
+        select("partner");
+        break;
 }
 
 customElements.define('nika-header',
