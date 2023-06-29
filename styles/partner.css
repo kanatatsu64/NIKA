@@ -67,4 +67,7 @@ a.a-link {
 
 main section > ul {
   margin: 0;
+}
+main h2 {
+  font-size: min(2em, 9vw);
 }/*# sourceMappingURL=partner.css.map */
