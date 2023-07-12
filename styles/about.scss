@@ -158,3 +158,20 @@ section#vision {
         color: rgb(79, 79, 79);
     }
 }
+section#value {
+    background-color: rgb(232, 232, 232);
+    padding-bottom: 2em;
+
+    h2::before {
+        content: "VALUE";
+        color: lightgray;
+    }
+    ol {
+        width: min(800px, 70%);
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
+}

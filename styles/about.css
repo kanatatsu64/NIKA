@@ -149,4 +149,21 @@ section#vision {
 section#vision h2::before {
   content: "VISION";
   color: rgb(79, 79, 79);
+}
+
+section#value {
+  background-color: rgb(232, 232, 232);
+  padding-bottom: 2em;
+}
+section#value h2::before {
+  content: "VALUE";
+  color: lightgray;
+}
+section#value ol {
+  width: min(800px, 70%);
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0;
 }/*# sourceMappingURL=about.css.map */
