@@ -1,0 +1,152 @@
+main section {
+  padding: 0;
+  font-size: min(1em, 2vw);
+}
+
+section#top {
+  background-color: black;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+section#top h1 {
+  font-size: 3em;
+  line-height: 100%;
+  margin: 0;
+}
+section#top aside {
+  font-weight: lighter;
+}
+
+section#intro {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  background-color: black;
+  color: white;
+}
+section#intro h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+section#intro figure {
+  text-align: end;
+}
+section#intro figure img {
+  width: 15em;
+  height: 20em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#intro p {
+  line-height: 1.2em;
+}
+
+section#team {
+  display: grid;
+  background-color: rgb(255, 165, 0);
+  color: black;
+  grid-template-columns: 1fr 1fr;
+  height: 15em;
+  padding: 1em 0;
+}
+section#team div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 3em;
+}
+section#team div h2 {
+  display: inline-block;
+  font-size: 2em;
+  text-align: center;
+}
+section#team figure {
+  margin: 0;
+}
+section#team figure img {
+  width: 20em;
+  height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#company {
+  background-color: black;
+  color: white;
+}
+section#company h2::before {
+  content: "COMPANY";
+  color: rgb(58, 58, 58);
+}
+section#company dl {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+section#company dl dt {
+  border-right: 2px solid rgb(255, 165, 0);
+  padding: 1em 0;
+}
+section#company dl dd {
+  margin-left: 2em;
+  padding: 1em 0;
+}
+section#company dl ul {
+  list-style: inside;
+}
+
+section.decorate h2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 0.8em;
+  font-weight: normal;
+  z-index: 1;
+}
+section.decorate h2::before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: -0.54em;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 2.5em;
+  z-index: -1;
+}
+section.decorate span {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+section#policy {
+  background-color: rgb(232, 232, 232);
+  padding-bottom: 2em;
+}
+section#policy h2::before {
+  content: "POLICY";
+  color: lightgray;
+}
+
+section#mission {
+  background-color: black;
+  color: white;
+  padding-bottom: 2em;
+}
+section#mission h2::before {
+  content: "MISSION";
+  color: rgb(58, 58, 58);
+}
+
+section#vision {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding-bottom: 2em;
+}
+section#vision h2::before {
+  content: "VISION";
+  color: rgb(79, 79, 79);
+}/*# sourceMappingURL=about.css.map */
