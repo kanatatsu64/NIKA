@@ -1,0 +1,170 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2 {
+  font-size: 2em;
+  background-color: rgb(255, 165, 0);
+  color: white;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  box-sizing: border-box;
+  width: min(100%, 900px);
+}
+
+section, p {
+  width: min(90%, 800px);
+}
+
+section h3 {
+  display: flex;
+  width: 100%;
+  padding: 0.2em;
+  padding-left: 2em;
+  box-sizing: border-box;
+}
+section h3::before {
+  display: block;
+  content: "";
+  background-color: black;
+  width: 0.1em;
+  margin-right: 1em;
+}
+
+section#coach h3 {
+  background-color: rgb(246, 235, 5);
+}
+section#coach ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+section#coach article img {
+  width: calc(100% - 0.5em);
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#coach article span {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 0.8em;
+}
+section#coach article dl {
+  background-color: rgb(255, 165, 0);
+  font-size: min(1em, 2.2vw);
+  margin: 0.5em 0;
+}
+section#coach article dl dt, section#coach article dl dd {
+  margin: 0;
+  text-align: center;
+}
+section#coach article dl div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section#coach article dl div.position {
+  position: relative;
+  border-bottom: 2px solid black;
+}
+section#coach article dl div.position::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url(/icons/school_delimiter.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: calc(-0.4em - 1px);
+  width: 100%;
+  height: 0.8em;
+  text-align: center;
+}
+section#coach article p {
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+section#schedule h3 {
+  background-color: rgb(246, 235, 5);
+  margin-bottom: 0;
+}
+section#schedule aside#note {
+  width: 100%;
+  text-align: start;
+  margin-bottom: 1em;
+}
+section#schedule aside.red {
+  color: red;
+}
+section#schedule table {
+  border-collapse: collapse;
+}
+section#schedule table th, section#schedule table td {
+  border: 2px solid black;
+  text-align: center;
+}
+section#schedule table th {
+  background-color: rgb(255, 165, 0);
+}
+section#schedule table td {
+  width: 8em;
+}
+section#schedule table td aside {
+  font-size: 0.7em;
+  text-align: end;
+  padding-right: 1em;
+}
+section#schedule table span.round {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.4em;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 0.5em;
+}
+
+section#apply h3 {
+  background-color: rgb(246, 235, 5);
+}
+
+section#contact h3 {
+  background-color: rgb(126, 217, 87);
+}
+section#contact dl {
+  display: flex;
+  width: 100%;
+}
+section#contact dl dt {
+  display: inline-block;
+  background-color: rgb(126, 217, 87);
+  padding: 0 0.5em;
+}
+section#contact dl dd {
+  margin: 0;
+}
+section#contact dl div {
+  margin: 0 1em;
+}
+section#contact dl div#name {
+  display: flex;
+  align-items: center;
+}
+section#contact dl div#name dt {
+  background-color: white;
+}
+section#contact dl div#name dd {
+  font-size: 1.5em;
+}
+section#contact dl div#access {
+  line-height: 1.5;
+}
+section#contact dl a#url {
+  text-decoration: underline;
+}/*# sourceMappingURL=school.css.map */
