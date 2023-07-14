@@ -38,10 +38,53 @@ section#intro figure img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+section#intro figure figcaption {
+  display: none;
+}
 section#intro p {
   line-height: 1.2em;
 }
 
+@media (max-width: 550px) {
+  section#intro {
+    display: block;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  section#intro figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    text-align: center;
+  }
+  section#intro figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section#intro figure figcaption span {
+    display: block;
+    font-size: 3em;
+  }
+  section#intro figure figcaption span#role {
+    text-align: start;
+    font-size: 1.5em;
+  }
+  section#intro figure figcaption span#ruby {
+    font-size: 1.5em;
+  }
+  section#intro div#message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#intro div#message p {
+    width: -moz-max-content;
+    width: max-content;
+    text-align: start;
+    font-size: 1.3em;
+  }
+}
 section#team {
   display: grid;
   background-color: rgb(255, 165, 0);
@@ -91,10 +134,44 @@ section#company dl dd {
   margin-left: 2em;
   padding: 1em 0;
 }
-section#company dl ul {
-  list-style: inside;
+section#company dl ul li {
+  display: flex;
+  align-items: start;
+}
+section#company dl ul li::before {
+  display: inline-block;
+  content: "";
+  background-color: white;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  border-radius: 50%;
+  border: 0.3em solid black;
+  box-sizing: border-box;
+  margin-top: 0.3em;
+  margin-right: 0.3em;
+}
+section#company dl ul p {
+  display: inline-block;
 }
 
+@media (max-width: 550px) {
+  section#company dl {
+    display: block;
+  }
+  section#company dl dt {
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid rgb(255, 165, 0);
+    font-size: 1.3em;
+  }
+  section#company dl dd {
+    padding: 0;
+    margin-left: 1.3em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+}
 section.decorate h2 {
   position: relative;
   display: block;
@@ -122,6 +199,13 @@ section.decorate span {
   margin-bottom: 0.5em;
 }
 
+@media (max-width: 800px) {
+  section.decorate span {
+    display: block;
+    font-size: 1.5em;
+    margin: 2em 0;
+  }
+}
 section#policy {
   background-color: rgb(232, 232, 232);
   padding-bottom: 2em;
@@ -160,10 +244,33 @@ section#value h2::before {
   color: lightgray;
 }
 section#value ol {
-  width: min(800px, 70%);
+  width: min(800px, 80%);
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 0;
+}
+section#value ol li {
+  margin-left: 1em;
+}
+
+@media (max-width: 800px) {
+  section#value ol {
+    display: block;
+    width: -moz-max-content;
+    width: max-content;
+    counter-reset: value;
+    list-style: none;
+    font-size: 1em;
+  }
+  section#value ol li {
+    height: 4em;
+  }
+  section#value ol li::before {
+    content: counter(value);
+    counter-increment: value;
+    font-size: 2em;
+    margin-right: 1em;
+  }
 }/*# sourceMappingURL=about.css.map */
