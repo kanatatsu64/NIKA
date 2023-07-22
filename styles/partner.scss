@@ -7,4 +7,9 @@ main {
     h2 {
         font-size: min(2em, 9vw);
     }
+    li {
+        img {
+            height: 3em;   
+        }
+    }
 }

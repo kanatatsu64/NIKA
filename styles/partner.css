@@ -70,4 +70,7 @@ main section > ul {
 }
 main h2 {
   font-size: min(2em, 9vw);
+}
+main li img {
+  height: 3em;
 }/*# sourceMappingURL=partner.css.map */
