@@ -1,4 +1,4 @@
-let res = await fetch("component/header.htm");
+let res = await fetch("/component/header.htm");
 let text = await res.text();
 let dom = new DOMParser().parseFromString(text, "text/html");
 let html = dom.getElementsByTagName("body")[0].innerHTML;
