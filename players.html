@@ -328,7 +328,8 @@
             </section>
         </template>
         <script>
-            const players = document.querySelectorAll("section#players ul article");
+            // TODO: fix this after filling information
+            const players = []; //document.querySelectorAll("section#players ul article");
             const main = document.querySelector("main");
             const template = document.querySelector("template");
 
@@ -350,6 +351,7 @@
             }
 
             main.onclick = closeDetail;
+
             players.forEach((article, index) => article.onclick = event => {
                 event.stopPropagation();
 
