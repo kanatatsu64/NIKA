@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/component/header.js"></script>
+    <link href="/styles/default.css" rel="stylesheet"/>
+</head>
+<body>
+    <nika-header data-link="news.html"></nika-header>
+    <main>
+        <article>
+            <div class="news_caption">
+                <span class="news_date">2023.07.08</span>
+                <span class="news_type">試合結果</span>
+            </div>
+            <p class="news_desc">【試合結果】3×3 UNITED Central Area</p>
+            <figure class="news_pictures">
+                <img src="/images/news/20230708_1.png"/>
+                <img src="/images/news/20230708_2.png"/>
+                <img src="/images/news/20230708_3.png"/>
+                <img src="/images/news/20230708_4.png"/>
+            </figure>
+            <dl class="news_info">
+                <div>
+                    <dd>日時</dd>
+                    <dt>7月8日土曜日</dt>
+                </div>
+                <div>
+                    <dd>会場</dd>
+                    <dt>ペナルティスタジアムKOBE</dt>
+                </div>
+            </dl>
+            <p class="news_content">
+上記の日程で、初の公式戦へ挑みました。
+            </p>
+            <p class="news_content">
+本戦への進出は叶いませんでしたが、チームの課題の見つかる試合となりました。応援してくださった皆様ありがとうございました。
+            </p>
+            <p class="news_content">
+これからもNIKAは守口市から世界へ”をスローガンに頑張っていきます！
+            </p>
+        </article>
+    </main>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            font-family: 'Kozuka Gothic Pr6N','小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+            max-width: 800px;
+            margin: 1em;
+        }
+        .news_caption {
+            font-size: 1em;
+            line-height: 1.8em;
+            height: 1.8em;
+            margin-top: 1em;
+            margin-bottom: 0.2em;
+        }
+        .news_date {
+            display: inline-block;
+            height: 100%;
+            color: #A0A0A0;
+        }
+        .news_type {
+            display: inline-block;
+            color: white;
+            background-color: #ffc400;
+            font-size: 0.85em;
+            height: 100%;
+            vertical-align: bottom;
+            padding: 0 0.3em;
+        }
+        .news_desc {
+            margin: 0;
+        }
+        .news_pictures {
+            align-self: center;
+        }
+        .news_pictures img {
+            margin: 0 0.5em;
+            max-width: 100%;
+            max-height: 220px;
+            object-fit: contain;
+        }
+        .news_info {
+            margin: 0;
+        }
+        .news_info div {
+            height: 1.5em;
+            line-height: 1.5em;
+            margin: 0.5em 0;
+        }
+        .news_info dd {
+            display: inline-block;
+            background-color: #CCCCCC;
+            width: 4em;
+            height: 100%;
+            margin: 0;
+            text-align: center;
+        }
+        .news_info dt {
+            display: inline-block;
+            height: 100%;
+            margin: 0;
+        }
+        @media (max-width: 550px) {
+            .news_pictures {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</body>
+</html>
