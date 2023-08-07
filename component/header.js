@@ -32,6 +32,9 @@ customElements.define('nika-header',
             super();
             const shadowRoot = this.attachShadow({mode: 'open'});
             shadowRoot.appendChild(template.content.cloneNode(true));
+
+            const link = this.dataset.link || "index.html";
+            shadowRoot.querySelector("div#home a").setAttribute("href", link)
             shadowRoot.querySelector("#menu_tab_btn").onclick = () => {
                 var header = shadowRoot.querySelector("header");
                 var isOpen = header.classList.contains("open");

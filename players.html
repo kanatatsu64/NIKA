@@ -4,12 +4,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="icons/Nika.png" rel="icon"/>
         <link href="styles/players.css" rel="stylesheet"/>
-        <script type="module" src="component/players_header.js"></script>
+        <script type="module" src="component/header.js"></script>
     </head>
     <body>
-        <players-header></players-header>
+        <nika-header></nika-header>
         <main>
-            <section id="players">
+            <section id="players" class="intro">
                 <h2>選手</h2>
                 <ul>
                     <article>
@@ -70,7 +70,7 @@
                     </article>
                 </ul>
             </section>
-            <section id="trainee">
+            <section id="trainee" class="intro">
                 <h2>練習生</h2>
                 <ul>
                     <article>
@@ -83,7 +83,7 @@
                     </article>
                 </ul>
             </section>
-            <section id="repr">
+            <section id="repr" class="intro">
                 <h2>代表</h2>
                 <ul>
                     <article>
@@ -96,7 +96,7 @@
                     </article>
                 </ul>
             </section>
-            <section id="staff">
+            <section id="staff" class="intro">
                 <h2>スタッフ</h2>
                 <ul>
                     <article>
@@ -111,5 +111,262 @@
             </section>
         </main>
         <nika-footer></nika-footer>
+        <template>
+            <section id="detail" class="players">
+                <div id="message">
+                    <p>
+初心を忘れず、日々成長できるよう頑張ります。<br/>
+応援宜しくお願いします。
+                    </p>
+                    <div id="name">
+                        <aside>#11</aside>
+                        <div>
+                            <span>川崎　滉平</span>
+                            <span id="ruby">Kohei Kawasaki</span>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <figcaption>CAPTAIN</figcaption>
+                    <img src="images/players/コウヘイ.jpg">
+                </figure>
+                <div id="profile">
+                    <div id="profile_icon">
+                        <span>Profile</span>
+                    </div>
+                    <dl>
+                        <dt>生年月日</dt>
+                        <dd>1999.08.11</dd>
+                        <dt>ポジション</dt>
+                        <dd>PG / SG</dd>
+                        <dt>身長 / 体重</dt>
+                        <dd>173cm / 75kg</dd>
+                        <dt>出身地</dt>
+                        <dd>大阪府</dd>
+                        <dt>出身校</dt>
+                        <dd>天理大学</dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="detail" class="players">
+                <div id="message">
+                    <p>
+初心を忘れず、日々成長できるよう頑張ります。<br/>
+応援宜しくお願いします。
+                    </p>
+                    <div id="name">
+                        <aside>#05</aside>
+                        <div>
+                            <span>明石　栄輝</span>
+                            <span id="ruby">Eiki Akashi</span>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="images/players/エイキ.jpg">
+                </figure>
+                <div id="profile">
+                    <div id="profile_icon">
+                        <span>Profile</span>
+                    </div>
+                    <dl>
+                        <dt>生年月日</dt>
+                        <dd>1999.08.11</dd>
+                        <dt>ポジション</dt>
+                        <dd>PG / SG</dd>
+                        <dt>身長 / 体重</dt>
+                        <dd>173cm / 75kg</dd>
+                        <dt>出身地</dt>
+                        <dd>大阪府</dd>
+                        <dt>出身校</dt>
+                        <dd>天理大学</dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="detail" class="players">
+                <div id="message">
+                    <p>
+初心を忘れず、日々成長できるよう頑張ります。<br/>
+応援宜しくお願いします。
+                    </p>
+                    <div id="name">
+                        <aside>#06</aside>
+                        <div>
+                            <span>坂本　裕介</span>
+                            <span id="ruby">Yusuke Sakamoto</span>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="images/players/ユウスケ.jpg">
+                </figure>
+                <div id="profile">
+                    <div id="profile_icon">
+                        <span>Profile</span>
+                    </div>
+                    <dl>
+                        <dt>生年月日</dt>
+                        <dd>1999.08.11</dd>
+                        <dt>ポジション</dt>
+                        <dd>PG / SG</dd>
+                        <dt>身長 / 体重</dt>
+                        <dd>173cm / 75kg</dd>
+                        <dt>出身地</dt>
+                        <dd>大阪府</dd>
+                        <dt>出身校</dt>
+                        <dd>天理大学</dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="detail" class="players">
+                <div id="message">
+                    <p>
+初心を忘れず、日々成長できるよう頑張ります。<br/>
+応援宜しくお願いします。
+                    </p>
+                    <div id="name">
+                        <aside>#07</aside>
+                        <div>
+                            <span>越智　淳也</span>
+                            <span id="ruby">Junya Eti</span>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="images/players/ジュンヤ.jpg">
+                </figure>
+                <div id="profile">
+                    <div id="profile_icon">
+                        <span>Profile</span>
+                    </div>
+                    <dl>
+                        <dt>生年月日</dt>
+                        <dd>1999.08.11</dd>
+                        <dt>ポジション</dt>
+                        <dd>PG / SG</dd>
+                        <dt>身長 / 体重</dt>
+                        <dd>173cm / 75kg</dd>
+                        <dt>出身地</dt>
+                        <dd>大阪府</dd>
+                        <dt>出身校</dt>
+                        <dd>天理大学</dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="detail" class="players">
+                <div id="message">
+                    <p>
+初心を忘れず、日々成長できるよう頑張ります。<br/>
+応援宜しくお願いします。
+                    </p>
+                    <div id="name">
+                        <aside>#10</aside>
+                        <div>
+                            <span>本田　大和</span>
+                            <span id="ruby">Yamato Honda</span>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="images/players/ヤマト.jpg">
+                </figure>
+                <div id="profile">
+                    <div id="profile_icon">
+                        <span>Profile</span>
+                    </div>
+                    <dl>
+                        <dt>生年月日</dt>
+                        <dd>1999.08.11</dd>
+                        <dt>ポジション</dt>
+                        <dd>PG / SG</dd>
+                        <dt>身長 / 体重</dt>
+                        <dd>173cm / 75kg</dd>
+                        <dt>出身地</dt>
+                        <dd>大阪府</dd>
+                        <dt>出身校</dt>
+                        <dd>天理大学</dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="detail" class="players">
+                <div id="message">
+                    <p>
+初心を忘れず、日々成長できるよう頑張ります。<br/>
+応援宜しくお願いします。
+                    </p>
+                    <div id="name">
+                        <aside></aside>
+                        <div>
+                            <span>田口　雄大</span>
+                            <span id="ruby">Yudai Taguchi</span>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <div class="dummy_profile" style="background-color: white; color: black;">
+                        <span>Comming soon</span>
+                        <span>...</span>
+                    </div>
+                </figure>
+                <div id="profile">
+                    <div id="profile_icon">
+                        <span>Profile</span>
+                    </div>
+                    <dl>
+                        <dt>生年月日</dt>
+                        <dd>1999.08.11</dd>
+                        <dt>ポジション</dt>
+                        <dd>PG / SG</dd>
+                        <dt>身長 / 体重</dt>
+                        <dd>173cm / 75kg</dd>
+                        <dt>出身地</dt>
+                        <dd>大阪府</dd>
+                        <dt>出身校</dt>
+                        <dd>天理大学</dd>
+                    </dl>
+                </div>
+            </section>
+        </template>
+        <script>
+            const players = document.querySelectorAll("section#players ul article");
+            const main = document.querySelector("main");
+            const template = document.querySelector("template");
+
+            function closeDetail() {
+                const detail = document.querySelector("section.intro section#detail");
+                if (detail) {
+                    detail.remove();
+                }
+
+                const selecteds = document.querySelectorAll("article.selected");
+                selecteds.forEach(selected => {
+                    selected.classList.remove("selected");
+                });
+            }
+            function getDetail(kind, index) {
+                const content = template.content;
+                const nodes = content.querySelectorAll(`section#detail.${kind}`);
+                return nodes[index].cloneNode(true);
+            }
+
+            main.onclick = closeDetail;
+            players.forEach((article, index) => article.onclick = event => {
+                event.stopPropagation();
+
+                closeDetail();
+                article.classList.add("selected");
+
+                const grid = article.parentNode;
+                const players_col = window
+                                        .getComputedStyle(grid)
+                                        .gridTemplateColumns.split(" ").length;
+                const row = Math.floor(index / players_col);
+                const col = index % players_col;
+                const head = players[players_col * row];
+                const detail = getDetail("players", index);
+                grid.insertBefore(detail.cloneNode(true), head);
+                document.querySelector("section#detail").scrollIntoView();
+            });
+        </script>
     </body>
 </html>

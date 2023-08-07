@@ -70,6 +70,7 @@ header {
             /* font-family: 'Broadway', sans-serif; */
             width: 100%;
             box-sizing: border-box;
+            z-index: 1;
 
             ul {
                 display: grid;
@@ -82,7 +83,8 @@ header {
                     white-space: nowrap;
 
                     a {
-                        display: inline;
+                        display: flex;
+                        text-align: center;
                         cursor: pointer;
                         margin: 0;
 
