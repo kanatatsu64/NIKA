@@ -102,7 +102,7 @@ section.intro {
     margin: 0;
   }
 }
-section#detail {
+section.detail {
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
@@ -112,11 +112,11 @@ section#detail {
   border: none;
   color: white;
 }
-section#detail div#message p {
+section.detail div#message p {
   margin: 1em;
   text-align: center;
 }
-section#detail div#message p::after {
+section.detail div#message p::after {
   display: block;
   content: "";
   background-image: url(/icons/brace.png);
@@ -125,24 +125,24 @@ section#detail div#message p::after {
   width: 100%;
   aspect-ratio: 5/1;
 }
-section#detail div#name {
+section.detail div#name {
   display: flex;
   margin: 1em;
   justify-content: end;
 }
-section#detail div#name aside {
+section.detail div#name aside {
   font-size: 1.5em;
   margin-right: 1em;
 }
-section#detail div#name span {
+section.detail div#name span {
   display: block;
   font-size: 1.5em;
   text-align: end;
 }
-section#detail div#name span#ruby {
+section.detail div#name span#ruby {
   font-size: 1em;
 }
-section#detail figure {
+section.detail figure {
   position: relative;
   margin: 0;
   width: 100%;
@@ -151,7 +151,7 @@ section#detail figure {
   overflow: hidden;
   font-size: min(1em, 1.5vw);
 }
-section#detail figure figcaption {
+section.detail figure figcaption {
   position: absolute;
   background-color: white;
   color: black;
@@ -160,16 +160,16 @@ section#detail figure figcaption {
   padding: 10em;
   padding-bottom: 0;
 }
-section#detail figure img {
+section.detail figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-section#detail div#profile {
+section.detail div#profile {
   text-align: center;
 }
-section#detail div#profile div#profile_icon {
+section.detail div#profile div#profile_icon {
   position: relative;
   display: inline-block;
   background-color: orange;
@@ -177,11 +177,11 @@ section#detail div#profile div#profile_icon {
   font-size: 1.5em;
   line-height: 1.2;
 }
-section#detail div#profile div#profile_icon span {
+section.detail div#profile div#profile_icon span {
   display: block;
   padding: 0.3em 1em;
 }
-section#detail div#profile div#profile_icon::before {
+section.detail div#profile div#profile_icon::before {
   position: absolute;
   display: block;
   content: "";
@@ -189,7 +189,7 @@ section#detail div#profile div#profile_icon::before {
   width: 100%;
   top: 0.2em;
 }
-section#detail div#profile div#profile_icon::after {
+section.detail div#profile div#profile_icon::after {
   position: absolute;
   display: block;
   content: "";
@@ -197,51 +197,51 @@ section#detail div#profile div#profile_icon::after {
   width: 100%;
   bottom: 0.2em;
 }
-section#detail div#profile dl {
+section.detail div#profile dl {
   display: grid;
   grid-template-columns: max-content 1fr;
   text-align: start;
 }
-section#detail div#profile dl dt {
+section.detail div#profile dl dt {
   position: relative;
   margin-right: 1em;
   box-sizing: border-box;
 }
-section#detail div#profile dl dt::after {
+section.detail div#profile dl dt::after {
   position: absolute;
   content: ":";
   right: -0.5em;
 }
-section#detail div#profile dl dd {
+section.detail div#profile dl dd {
   margin: 0;
 }
 
 @media (max-width: 850px) {
-  section#detail {
+  section.detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
   }
-  section#detail div#name {
+  section.detail div#name {
     font-size: min(1em, 3vw);
     justify-content: start;
   }
-  section#detail div#message {
+  section.detail div#message {
     grid-column: 2;
     grid-row: 1;
   }
-  section#detail div#message p {
+  section.detail div#message p {
     font-size: min(1em, 3vw);
   }
-  section#detail div#message p::after {
+  section.detail div#message p::after {
     transform: scaleX(-1);
   }
-  section#detail figure {
+  section.detail figure {
     grid-column: 1;
     grid-row: 1;
     font-size: min(1em, 3vw);
   }
-  section#detail div#profile {
+  section.detail div#profile {
     display: flex;
     justify-content: center;
     grid-column: 1/3;
@@ -249,14 +249,14 @@ section#detail div#profile dl dd {
     background-color: orange;
     color: black;
   }
-  section#detail div#profile div#profile_icon {
+  section.detail div#profile div#profile_icon {
     display: none;
   }
-  section#detail div#profile dl {
+  section.detail div#profile dl {
     width: -moz-max-content;
     width: max-content;
   }
-  section#detail div#profile dl dt, section#detail div#profile dl dd {
+  section.detail div#profile dl dt, section.detail div#profile dl dd {
     line-height: 2.5;
   }
 }
@@ -270,12 +270,13 @@ section#players article.selected::before {
   content: "";
   display: block;
   position: absolute;
-  border-width: 1.5em 1.5em 0 1.5em;
+  border-width: 1.7em 1.7em 0 1.7em;
   border-color: rgb(45, 45, 45) transparent transparent transparent;
   border-style: solid;
   top: 0;
   left: 50%;
   transform: translate(-50%, -100%);
+  z-index: -1;
 }
 
 @media (max-width: 850px) {

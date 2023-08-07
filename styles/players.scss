@@ -39,7 +39,7 @@ section.intro {
     }
 }
 
-section#detail {
+section.detail {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
@@ -163,7 +163,7 @@ section#detail {
     }
 }
 @media (max-width: 850px) {
-    section#detail {
+    section.detail {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0;
@@ -223,12 +223,13 @@ section#players {
             content: "";
             display: block;
             position: absolute; 
-            border-width: 1.5em 1.5em 0 1.5em;
+            border-width: 1.7em 1.7em 0 1.7em;
             border-color: rgb(45, 45, 45) transparent transparent transparent;
             border-style: solid;
             top: 0;
             left: 50%;
             transform: translate(-50%, -100%);
+            z-index: -1;
         }
     }
 }
