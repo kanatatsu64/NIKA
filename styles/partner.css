@@ -69,8 +69,17 @@ main section > ul {
   margin: 0;
 }
 main h2 {
-  font-size: min(2em, 9vw);
+  font-size: min(2em, 8vw);
 }
-main li img {
-  height: 3em;
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+main ul li {
+  margin: 0 1em;
+}
+main ul li img {
+  height: min(3em, 12vw);
 }/*# sourceMappingURL=partner.css.map */

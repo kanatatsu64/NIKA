@@ -5,11 +5,20 @@ main {
         margin: 0;
     }
     h2 {
-        font-size: min(2em, 9vw);
+        font-size: min(2em, 8vw);
     }
-    li {
-        img {
-            height: 3em;   
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        li {
+            margin: 0 1em;
+
+            img {
+                height: min(3em, 12vw);   
+            }
         }
     }
 }
